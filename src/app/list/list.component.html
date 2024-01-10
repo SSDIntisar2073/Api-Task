@@ -1,0 +1,59 @@
+
+<link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.no-icons.min.css" rel="stylesheet">
+<link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<section >
+  <div>
+    <div >
+      <div >
+        <div>
+          <i style="color: #709085"></i>
+          <div class="row">
+            <div class="col-md-2">
+                <img src="assets/Images/logo.png" width="100px" height="50px" style="margin-left: 30px; margin-top: 20px;">
+            </div>
+        </div>
+          <!-- <h1 style="position: absolute; top: 40px;">Task Management System</h1> -->
+        </div>
+      
+
+
+        <div cdkDropListGroup style="margin-left: 90px;">
+          <div class="example-container">
+            <h2 style="background-color: rgb(249, 249, 42); border-radius: .5rem;  "> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;TO DO</h2>
+            <div cdkDropList [cdkDropListData]="todo" class="example-list" (cdkDropListDropped)="drop($event)">
+              <div class="example-box" *ngFor="let item of todo" cdkDrag>{{item}}</div>
+            </div>
+          </div>
+          <div class="example-container">
+            <h2 style="background-color: rgb(114, 126, 230); border-radius: .5rem;  "> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;In Progress</h2>
+            <div cdkDropList [cdkDropListData]="Inprogress" class="example-list" (cdkDropListDropped)="drop($event)">
+              <div class="example-box" *ngFor="let item of Inprogress" cdkDrag>{{item}}</div>
+            </div>
+          </div>
+          <div class="example-container">
+            <h2 style="background-color: rgb(3, 174, 25); border-radius: .5rem;  "> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Done</h2>
+            <div cdkDropList [cdkDropListData]="done" class="example-list" (cdkDropListDropped)="drop($event)">
+              <div class="example-box" *ngFor="let item of done" cdkDrag>{{item}}</div>
+            </div>
+          </div>
+        
+          
+        </div>
+      </div>
+      
+  
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+

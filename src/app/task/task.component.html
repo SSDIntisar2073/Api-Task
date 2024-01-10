@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <style>
+        body {
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        a {
+            color: white;
+            font-size: 20px;
+        }
+
+        li {
+            margin-top: 30px;
+            margin-bottom: 51.5px;
+
+        }
+
+        #row1:hover {
+            border-width: 4px;
+        }
+
+        #row1 {
+            padding: 2%;
+            border: 1px solid rgb(54, 54, 142);
+            border-radius: 5px;
+            margin-left: 2%;
+            margin-right: 2%;
+            padding-top: 3%;
+            margin-bottom: 2%;
+        }
+
+        #green_card {
+            background-color: white;
+            border: 3px solid rgb(54, 54, 142);
+            border-radius: 10px;
+            padding-right: 1%;
+            margin-left: 10px;
+            width: 120px;
+            text-align: center;
+            margin-right: 4%;
+        }
+
+        #green_card:hover {
+            background-color: white;
+            border: 3px solid rgb(54, 54, 142);
+            border-radius: 10px;
+            padding-right: 1%;
+            margin-left: 10px;
+            width: 120px;
+            text-align: center;
+            margin-right: 4%;
+            box-shadow: rgba(49, 230, 8, 0.56) 2px 2px 70px 4px;
+        }
+
+        #red_card {
+            background-color: white;
+            border: 3px solid rgb(54, 54, 142);
+            border-radius: 10px;
+            padding-right: 1%;
+            margin-left: 10px;
+            width: 120px;
+            text-align: center;
+            margin-right: 4%;
+        }
+
+        #red_card:hover {
+            background-color: white;
+            border: 3px solid rgb(54, 54, 142);
+            border-radius: 10px;
+            padding-right: 1%;
+            margin-left: 10px;
+            width: 120px;
+            text-align: center;
+            margin-right: 4%;
+            box-shadow: rgba(232, 14, 14, 0.56) 2px 2px 70px 4px;
+        }
+
+        #yellow_card {
+            background-color: white;
+            border: 3px solid rgb(54, 54, 142);
+            border-radius: 10px;
+            padding-right: 1%;
+            margin-left: 10px;
+            width: 120px;
+            text-align: center;
+            margin-right: 4%;
+        }
+
+        #yellow_card:hover {
+            background-color: white;
+            border: 3px solid rgb(54, 54, 142);
+            border-radius: 10px;
+            padding-right: 1%;
+            margin-left: 10px;
+            width: 120px;
+            text-align: center;
+            margin-right: 4%;
+            box-shadow: rgba(249, 249, 8, 0.56) 2px 2px 70px 4px;
+        }
+
+        #card1 {
+            background-color: white;
+            border: 3px solid rgb(54, 54, 142);
+            border-radius: 10px;
+            padding-right: 1%;
+            margin-left: 10px;
+            width: 120px;
+            text-align: center;
+            margin-right: 4%;
+
+        }
+
+        #card1:hover {
+            background-color: white;
+            border: 3px solid rgb(54, 54, 142);
+            border-radius: 10px;
+            padding-right: 1%;
+            margin-left: 10px;
+            width: 120px;
+            text-align: center;
+            margin-right: 4%;
+            box-shadow: rgba(0, 0, 0, 0.56) 2px 2px 70px 4px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="row">
+        <nav class="navbar">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="#"><img src="assets/Images/logo.png" width="100px" style="margin-left: -700px;"></a>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <div class="row" >
+
+        <div class="col-sm-2"
+            style="background-color:  rgb(54, 54, 142);border-bottom-right-radius: 15px;border-top-right-radius: 15px;margin-right:1% ;">
+            <ul class="nav flex-column">
+                <span class="nav-item" style="margin-left: 4%;margin-top: 1%;">
+                    <span class="glyphicon glyphicon-user"
+                        style="color: white;font-size: px;margin-left: 6%;"></span><span align="center" style="font-size: 20px; color: white;  margin-left: 5%;
+               margin-bottom: 46.2px;"> Intisar Nasser</span>
+                </span>
+                <li class="nav-item">
+                    <a class="nav-link" href="Task" style="margin-top: -20px;"><span class="glyphicon glyphicon-home"></span> Dashboard</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="newtask" style="margin-top: -40px;"><span class="glyphicon glyphicon-plus-sign"></span> Add New Task</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="list" style="margin-top: -30px;"><span class="  glyphicon glyphicon-file"></span> Report</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="foo"> <span class="glyphicon glyphicon-search"></span> Search</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#" style="margin-top: -20px;"><span class="glyphicon glyphicon-log-out"></span> Log out</a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="col-sm-10"
+            style="background-color: rgba(238, 236, 236, 0.628); border-radius: 10px;width: 1250px;height: 600px;">
+
+            <div class="col-sm-8"
+                style="background-color: white;border-radius: 10px;width: 1220px;height: 580px;margin-top: 10px;">
+                <div class="row" style="margin-left: 1%;">
+                    <h2>DashedBoard</h2>
+                </div>
+                <div class="row" style="margin-left: 20%;">
+                    <div class="col-sm-1" id="green_card">
+                        <h5>Complated</h5>
+                        <h5>14</h5>
+                    </div>
+                    <div class="col-sm-1" id="yellow_card">
+                        <h5>In Progress</h5>
+                        <h5>10</h5>
+                    </div>
+                    <div class="col-sm-1" id="card1">
+                        <h5>Pending</h5>
+                        <h5>50</h5>
+                    </div>
+                    <div class="col-sm-1" id="red_card">
+                        <h5>Closed</h5>
+                        <h5>4</h5>
+                    </div>
+                </div>
+                <div class="row" style="margin-top:2% ;margin-left: 5%;margin-bottom: 2%;">
+                    <div class="col-sm-2">
+                        <h5>Task ID</h5>
+                    </div>
+                    <div class="col-sm-2">
+                        <h5>Task Name</h5>
+                    </div>
+                    <div class="col-sm-2">
+                        <h5>Start & End Date</h5>
+                    </div>
+                    <!-- <div class="col-sm-2"style="padding-right: 30px;"><h5>End Date</h5></div> -->
+                    <div class="col-sm-2">
+                        <h5>Description</h5>
+                    </div>
+                    <div class="col-sm-2">
+                        <h5>Sign To</h5>
+                    </div>
+                    <div class="col-sm-2">
+                        <h5>Statue</h5>
+                    </div>
+                </div>
+                <div class="row" id="row1">
+                    <div class="col-sm-2">
+                        <p>1</p>
+                    </div>
+                    <div class="col-sm-2">
+                        <p>Task Tracker pro1</p>
+                    </div>
+                    <div class="col-sm-2">
+                        <p style="margin-right: 2%;">31-12-2023 - 18-2-2024 </p>
+                    </div>
+                    <!-- <div class="col-sm-2"style="padding-right: 30px;"><h5>End Date</h5></div> -->
+                    <div class="col-sm-2">
+                        <p style="margin-left: 30%;">JS & TS</p>
+                    </div>
+                    <div class="col-sm-2">
+                        <p style="margin-left: 35%;">Jhon </p>
+                    </div>
+                    <div class="col-sm-2">
+                      
+                        <div class="progress" style="height: 10px;width:90px;position: absolute;top: 18%;left: 25%;">
+                            <div class="progress-bar progress-bar-warning" style="width:70%"></div>
+                        </div>
+                  
+                    </div>
+
+                </div>
+                <div class="row" id="row1">
+                    <div class="col-sm-2">
+                        <p>2</p>
+                    </div>
+                    <div class="col-sm-2">
+                        <p>Task Tracker pro2</p>
+                    </div>
+                    <div class="col-sm-2">
+                        <p style="margin-right: 2%;">2-9-2023 - 2-1-2024 </p>
+                    </div>
+                    <!-- <div class="col-sm-2"style="padding-right: 30px;"><h5>End Date</h5></div> -->
+                    <div class="col-sm-2">
+                        <p style="margin-left: 30%;">PHP & SQL</p>
+                    </div>
+                    <div class="col-sm-2">
+                        <p style="margin-left: 35%;">Ali </p>
+                    </div>
+                    <div class="col-sm-2">
+                
+                        <div class="progress"
+                            style="height: 10px;width:90px;position: absolute;top: 18%;left: 25%;margin-right: 2%;padding-top: 3%;margin-bottom: 2%;">
+                            <div class="progress-bar" style="width:0%"></div>
+                        </div>
+                    
+                    </div>
+
+                </div>
+                <div class="row" id="row1">
+                    <div class="col-sm-2">
+                        <p>3</p>
+                    </div>
+                    <div class="col-sm-2">
+                        <p>Task Tracker pro3</p>
+                    </div>
+                    <div class="col-sm-2">
+                        <p style="margin-right: 2%;">1-11-2023 - 3-12-2023 </p>
+                    </div>
+                    <!-- <div class="col-sm-2"style="padding-right: 30px;"><h5>End Date</h5></div> -->
+                    <div class="col-sm-2">
+                        <p style="margin-left: 30%;">CSS & HTML</p>
+                    </div>
+                    <div class="col-sm-2">
+                        <p style="margin-left: 35%;">Alia </p>
+                    </div>
+                    <div class="col-sm-2">
+                        <div class="progress" style="height: 10px;width:90px;position: absolute;top: 18%;left: 25%;">
+                            <div class="progress-bar progress-bar-success" style="width:100%"></div>
+                         </div>
+                      
+                       
+                      
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+
+</html>
