@@ -54,21 +54,30 @@
             <form (ngSubmit)="onSubmit()" [formGroup]="loginForm" align="center" style="margin-top: 2%;">
                 <label>Email:</label>
                 <br>
-                <input type="text" name="username" value="" maxlength="200" placeholder="Email">
-                <br>
-                <label>Password:</label>
-                <input type="password" name="password" value="" style="margin-bottom: 1%;" maxlength="50" placeholder="password">
-                <br>
-                <a href="password" style="margin-left:50% ;">Forgot your password?</a>
+                <input type="text" formControlName="email" maxlength="200" placeholder="Email">
+            <br>
+                <span *ngIf="loginForm.get('email')?.hasError('required') && loginForm.get('email')?.touched" class="text-danger" style="font-size: 10px; margin-bottom: 200px; ">Email is required</span>
+                <span *ngIf="loginForm.get('email')?.hasError('email') && loginForm.get('email')?.touched" class="text-danger">Invalid email format</span>
             
-<!--            
-           <img src="assets/Images/5.png" style="margin-right: 70%;"> -->
-           <input type="submit" value="Sign In" class="btn btn-primary"
-               style="width: 100px; margin-top: 10%; margin-bottom: 2%; font-size: 24px; color: aliceblue; padding-bottom: 40px;">
-           <br>
-           <a href="register" style="color: rgb(119, 118, 118); text-decoration: none;">Don't have an Account?
-               Register</a>
-          </form>
+            <br>
+              
+                <label>Password:</label>
+                <input type="password" formControlName="password" style="margin-bottom: 1%;" maxlength="50" placeholder="Password">
+               
+
+<br>
+<span *ngIf="loginForm.get('password')?.hasError('required') && loginForm.get('password')?.touched" class="text-danger">Password is required</span>
+<span *ngIf="loginForm.get('password')?.hasError('minlength') && loginForm.get('password')?.touched" class="text-danger">Password must be at least 6 characters long</span>
+
+                <br>
+                <a href="password" style="margin-left:50%;">Forgot your password?</a>
+              
+                <input type="submit" value="Sign In" class="btn btn-primary" style="width: 100px; margin-top: 10%; margin-bottom: 2%; font-size: 24px; color: aliceblue; padding-bottom: 40px;">
+                <br>
+                <a href="register" style="color: rgb(119, 118, 118); text-decoration: none;">Don't have an Account? Register</a>
+            </form>
+            
+              
         </div>
         <div class="col-md-4">
             <img src="assets/Images/login3.png" style="height: 590px;" alt="">
