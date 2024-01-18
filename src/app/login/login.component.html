@@ -54,9 +54,9 @@
             <form (ngSubmit)="onSubmit()" [formGroup]="loginForm" align="center" style="margin-top: 2%;">
                 <label>Email:</label>
                 <br>
-                <input type="text" formControlName="email" maxlength="200" placeholder="Email">
+                <input type="text" formControlName="email" style="margin-bottom: 1%;" maxlength="200" placeholder="Email">
             <br>
-                <span *ngIf="loginForm.get('email')?.hasError('required') && loginForm.get('email')?.touched" class="text-danger" style="font-size: 10px; margin-bottom: 200px; ">Email is required</span>
+                <span *ngIf="loginForm.get('email')?.hasError('required') && loginForm.get('email')?.touched" class="text-danger" >Email is required</span>
                 <span *ngIf="loginForm.get('email')?.hasError('email') && loginForm.get('email')?.touched" class="text-danger">Invalid email format</span>
             
             <br>
@@ -67,8 +67,8 @@
 
 <br>
 <span *ngIf="loginForm.get('password')?.hasError('required') && loginForm.get('password')?.touched" class="text-danger">Password is required</span>
-<span *ngIf="loginForm.get('password')?.hasError('minlength') && loginForm.get('password')?.touched" class="text-danger">Password must be at least 6 characters long</span>
 
+<span *ngIf="loginForm.get('password')?.hasError('minlength') && loginForm.get('password')?.touched" class="text-danger">Password must be at least 6 characters long</span>
                 <br>
                 <a href="password" style="margin-left:50%;">Forgot your password?</a>
               
